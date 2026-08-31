@@ -2726,10 +2726,18 @@ input, select, textarea {
 			transform-origin: center center;
 			margin: 0 0;
 			display: block;
+			aspect-ratio: 1 / 1;
+			overflow: hidden;
 		}
 
 		.glass-art-item .image:before {
 			display: none;
+		}
+
+		.glass-art-item .image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 
 /* Header */

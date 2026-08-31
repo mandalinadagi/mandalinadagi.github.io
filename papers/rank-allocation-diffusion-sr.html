@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>FraIR - Cansu Korkmaz</title>
+		<title>Effective Rank Allocation - Cansu Korkmaz</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -32,32 +32,24 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>FraIR: Fourier Recomposition Adapter for Image Restoration</h2>
+							<h2>Effective Rank Allocation for Diffusion-Based Real-World Super-Resolution</h2>
 						</header>
-						
-						<p><strong>Authors:</strong> Cansu Korkmaz, Nancy Mehta, Radu Timofte</p>
-						<p><strong>Venue:</strong> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Jun. 2026</p>
 
-						<span class="image fit paper-detail-image"><img src="../images/papers/frair.png" alt="FraIR" /></span>
+						<p><strong>Authors:</strong> Cansu Korkmaz Soner, Radu Timofte</p>
+						<p><strong>Venue:</strong> (Under Review) European Conference on Computer Vision (ECCV), Sep. 2026</p>
+
+						<span class="image fit paper-detail-image"><img src="../images/papers/rank-allocation-diffusion-sr.png" alt="Effective Rank Allocation for Diffusion-Based Real-World Super-Resolution (ERASR) qualitative comparison" /></span>
 
 						<h3>Overview</h3>
-						<p>FraIR is a Fourier-based recomposition adapter for parameter-efficient transfer learning in image restoration. It applies a 1D Fourier transform to decompose token features into frequency components, performs low-rank adaptation via spectral projections with learnable reweighting, and reconstructs the adapted signal with an inverse transform gated by task-specific modulation. Integrated as plug-and-play modules within Transformer layers, FraIR is reparameterizable for zero-latency inference and adds less than 0.5% additional parameters.</p>
-
-						<h3>Key Contributions</h3>
-						<ul>
-							<li>Spectral-domain adapter that performs low-rank adaptation on Fourier-decomposed token features</li>
-							<li>Reparameterizable design achieving zero-latency inference with under 0.5% additional parameters</li>
-							<li>Outperforms prior parameter-efficient transfer learning (PETL) methods across denoising, deraining, super-resolution, and hybrid-degradation benchmarks</li>
-						</ul>
+						<p>This work, referred to as ERASR, studies how to allocate adaptation rank effectively across a diffusion-based backbone for one-step real-world super-resolution, building on rank-aware, parameter-efficient adaptation ideas explored in the author's related work on <a href="adaptsr.html">AdaptSR</a> and <a href="frair.html">FraIR</a>. Qualitative comparisons against recent one-step diffusion SR methods &mdash; SeeSR, SinSR, OSEDiff, PiSA-SR, AdcSR, and TVT &mdash; show sharper recovery of fine textures and legible fonts. The paper is currently under review; a full overview, quantitative results, and links will be added once it is public.</p>
 
 						<h3>Resources</h3>
 						<ul class="actions">
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/papers/Korkmaz_FraIR_Fourier_Recomposition_Adapter_for_Image_Restoration_CVPRW_2026_paper.pdf" class="button">Paper (CVF)</a></li>
-							<li><a href="https://openreview.net/forum?id=n9m13pabbk" class="button">OpenReview</a></li>
+							<li><a href="#" class="button">Paper (Coming Soon)</a></li>
 							<li><a href="#" class="button">Code (Coming Soon)</a></li>
 							<li><a href="#" class="button">BibTeX</a></li>
 						</ul>
-						
+
 						<p><a href="../publications.html">← Back to Publications</a></p>
 					</section>
 
@@ -85,4 +77,3 @@
 
 	</body>
 </html>
-

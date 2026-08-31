@@ -32,27 +32,27 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>AdaptSR: Rank-Aware Low-Rank Adaptation for Real-World Super-Resolution</h2>
+							<h2>AdaptSR: Low-Rank Adaptation for Efficient and Scalable Real-World Super-Resolution</h2>
 						</header>
-						
+
 						<p><strong>Authors:</strong> Cansu Korkmaz, Nancy Mehta, Radu Timofte</p>
-						<p><strong>Venue:</strong> (Under Review) the Fourteenth International Conference on Learning Representations (ICLR), April 2026</p>
-						
+						<p><strong>Venue:</strong> arXiv preprint, 2025</p>
+
 						<span class="image fit paper-detail-image"><img src="../images/papers/adaptsr.png" alt="AdaptSR" /></span>
-						
+
 						<h3>Overview</h3>
-						<p>AdaptSR presents a rank-aware low-rank adaptation method specifically designed for real-world super-resolution scenarios. The approach enables efficient model adaptation with improved performance by intelligently selecting and adapting low-rank components based on their importance for the task at hand.</p>
-						
+						<p>Super-resolution (SR) models trained on bicubic downsampling perform poorly on real-world images, where degradations are complex and unknown. Rather than resorting to unstable GAN training or computationally expensive diffusion models, AdaptSR repurposes bicubic-trained SR backbones for real-world SR by inserting lightweight low-rank adaptation (LoRA) layers. Only these LoRA layers are updated during adaptation, while the pretrained backbone stays frozen, so the model captures domain-specific corrections without adding any inference-time cost &mdash; the adapted layers merge seamlessly back into the backbone after training.</p>
+
 						<h3>Key Contributions</h3>
 						<ul>
-							<li>Rank-aware adaptation strategy for super-resolution</li>
-							<li>Efficient parameter adaptation for real-world scenarios</li>
-							<li>Improved performance with reduced computational overhead</li>
+							<li>Architecture-aware low-rank adaptation strategy that repurposes bicubic-trained SR models for real-world degradations</li>
+							<li>Outperforms GAN- and diffusion-based real SR methods by up to 4 dB in PSNR and 2% in perceptual scores</li>
+							<li>Trains roughly 92% fewer parameters than competing methods, enabling adaptation in minutes on modest hardware, with zero added inference cost</li>
 						</ul>
-						
+
 						<h3>Resources</h3>
 						<ul class="actions">
-							<li><a href="#" class="button">Paper (Coming Soon)</a></li>
+							<li><a href="https://arxiv.org/abs/2503.07748" class="button">Paper (arXiv)</a></li>
 							<li><a href="#" class="button">Code (Coming Soon)</a></li>
 							<li><a href="#" class="button">BibTeX</a></li>
 						</ul>
